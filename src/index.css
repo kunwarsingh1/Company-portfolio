@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-gray-900;
+  background-image: linear-gradient(to bottom right, #1a1a1a, #2d2d2d);
+}
+
+.perspective-2000 {
+  perspective: 2000px;
+  perspective-origin: 0% 50%;
+}
+
+.book-container {
+  @apply min-h-screen;
+}
+
+/* .book-cover {
+  background: linear-gradient(to right,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0.8) 20%,
+    rgba(0, 0, 0, 0.1) 30%
+  );
+  z-index: 30;
+} */
+
+.book-page {
+  transform-style: preserve-3d;
+  transform-origin: 0% 50%;
+}
+
+.book-page-texture {
+  @apply overflow-hidden;
+}
+
+.shadow-page {
+  box-shadow: inset -20px 0 50px rgba(0,0,0,0.5);
+}
+
+.book-content {
+  @apply relative text-center;
+}
